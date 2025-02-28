@@ -21,15 +21,16 @@ header {
     animation: fadeIn 2s;
 }
 
-h1, h2 {
-    margin: 5px;
+h1, h2, h3 {
+    margin: 10px;
 }
 
 .content {
-    padding: 20px;
+    padding: 40px 20px;
+    border-bottom: 2px solid var(--gold-light);
 }
 
-h3 {
+h2 {
     color: var(--blue-dark);
 }
 
