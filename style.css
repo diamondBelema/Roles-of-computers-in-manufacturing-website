@@ -1,9 +1,9 @@
 :root {
+    --blue-dark: #25568d;
+    --blue-light: #5893c6;
     --gold-dark: #c69300;
     --gold-light: #d8af3c;
     --cream: #f7f5c9;
-    --blue-light: #5893c6;
-    --blue-dark: #25568d;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
+    background: linear-gradient(90deg, var(--blue-dark), var(--blue-light));
     padding: 20px;
     color: white;
     animation: fadeIn 2s;
@@ -23,11 +23,16 @@ header {
 
 h1, h2, h3 {
     margin: 10px;
+    color: var(--blue-dark);
 }
 
 .content {
     padding: 40px 20px;
-    border-bottom: 2px solid var(--gold-light);
+    border-bottom: 2px solid var(--blue-light);
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
 }
 
 h2 {
@@ -35,21 +40,22 @@ h2 {
 }
 
 button {
-    background: var(--blue-light);
+    background: var(--blue-dark);
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
-    background: var(--blue-dark);
+    background: var(--blue-light);
 }
 
 footer {
-    background: var(--gold-dark);
+    background: var(--blue-dark);
     color: white;
     padding: 10px;
     margin-top: 20px;
