@@ -1,0 +1,60 @@
+:root {
+    --gold-dark: #c69300;
+    --gold-light: #d8af3c;
+    --cream: #f7f5c9;
+    --blue-light: #5893c6;
+    --blue-dark: #25568d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cream);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold-light));
+    padding: 20px;
+    color: white;
+    animation: fadeIn 2s;
+}
+
+h1, h2 {
+    margin: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+h3 {
+    color: var(--blue-dark);
+}
+
+button {
+    background: var(--blue-light);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--blue-dark);
+}
+
+footer {
+    background: var(--gold-dark);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
